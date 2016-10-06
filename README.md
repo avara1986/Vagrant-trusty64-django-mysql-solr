@@ -48,5 +48,6 @@ pip freeze > requirements.txt
 Rebuild Schema
 --------------
 ./manage.py build_solr_schema > ~/web/schema.xml
+
 cp ~/web/schema.xml ~/solr-4.10.2/example/solr/collection1/conf/schema.xml
 
