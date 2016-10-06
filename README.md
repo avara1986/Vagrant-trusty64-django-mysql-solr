@@ -1,5 +1,5 @@
 Django + Mysql + Solr
----------------------
+=====================
 
 Installation
 
@@ -25,7 +25,7 @@ Run Django and update Solr
 ```
 
 Routes
-======
+------
 
 Web:
 http://192.168.100.3:8000/
@@ -34,19 +34,19 @@ Solr:
 http://192.168.100.3:8983/solr/#/
 
 Solr Example
-============
+
 http://192.168.100.3:8000/notes/
 
 
 Update project
---------------
+==============
 
 Update python
-=============
+-------------
 pip freeze > requirements.txt
 
 Rebuild Schema
-==============
+--------------
 ./manage.py build_solr_schema > ~/web/schema.xml
 cp ~/web/schema.xml ~/solr-4.10.2/example/solr/collection1/conf/schema.xml
 
