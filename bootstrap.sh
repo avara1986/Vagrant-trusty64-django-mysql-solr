@@ -12,12 +12,6 @@ echo "Environment installation is beginning. This may take a few minutes.."
 #	Install core components
 ##
 
-sed -i "/mirror:\\/\\//d" /etc/apt/sources.list
-sed -i "1ideb mirror://mirrors.ubuntu.com/mirrors.txt trusty main restricted universe multiverse" /etc/apt/sources.list
-sed -i "1ideb mirror://mirrors.ubuntu.com/mirrors.txt trusty-updates main restricted universe multiverse" /etc/apt/sources.list
-sed -i "1ideb mirror://mirrors.ubuntu.com/mirrors.txt trusty-webports main restricted universe multiverse" /etc/apt/sources.list
-sed -i "1ideb mirror://mirrors.ubuntu.com/mirrors.txt trusty-security main restricted universe multiverse" /etc/apt/sources.list
-
 echo "Updating package repositories.."
 apt-get update
 
