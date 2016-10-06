@@ -1,0 +1,4 @@
+Django==1.10.2
+django-haystack==2.5.0
+pysolr==3.5.0
+requests==2.11.1

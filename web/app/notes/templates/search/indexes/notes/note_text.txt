@@ -1,0 +1,3 @@
+{# templates/search/indexes/notes/note_text.txt #}
+{{ object.title }}
+{{ object.body }}
