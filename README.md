@@ -4,37 +4,25 @@ Django + Mysql + Solr
 Installation
 
 ```
-#!bash
 vagrant up
-```
-```
-#!bash
 vagrant ssh
-```
-
-```
-#!bash
 cd web/app/
-```
-
-```
-#!bash
 workon vweb
 ```
 
 Install Python dependencies
 
 ```
-#!bash
 pip install -r requirements.txt
 ```
+Run Django and update Solr
 ```
-#!bash
 ./manage.py makemigrations
 ./manage.py migrate
 ./manage.py rebuild_index
 ./manage.py update_index
 ./manage.py runserver 0.0.0.0:8000
+```
 
 Routes
 ======
